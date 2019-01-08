@@ -20,8 +20,16 @@ public class License {
 	private String productName;
 
 	private String licenseType;
-	
+
 	private String comments;
+
+	private String organizationName;
+
+	private String contactName;
+
+	private String contactEmail;
+
+	private String contactPhone;
 
 	public License withId(String licenseId) {
 		this.licenseId = licenseId;
@@ -48,44 +56,60 @@ public class License {
 		return this;
 	}
 
-	public String getLicenseId() {
-		return licenseId;
+	public License withOrganizationName(String organizationName) {
+		this.organizationName = organizationName;
+		return this;
 	}
 
-	public void setLicenseId(String licenseId) {
-		this.licenseId = licenseId;
+	public License withContactName(String contactName) {
+		this.contactName = contactName;
+		return this;
+	}
+
+	public License withContactEmail(String contactEmail) {
+		this.contactEmail = contactEmail;
+		return this;
+	}
+
+	public License withContactPhone(String contactPhone) {
+		this.contactPhone = contactPhone;
+		return this;
+	}
+
+	public String getLicenseId() {
+		return licenseId;
 	}
 
 	public String getOrganizationId() {
 		return organizationId;
 	}
 
-	public void setOrganizationId(String organizationId) {
-		this.organizationId = organizationId;
-	}
-
 	public String getProductName() {
 		return productName;
-	}
-
-	public void setProductName(String productName) {
-		this.productName = productName;
 	}
 
 	public String getLicenseType() {
 		return licenseType;
 	}
 
-	public void setLicenseType(String licenseType) {
-		this.licenseType = licenseType;
-	}
-	
 	public String getComments() {
 		return comments;
 	}
 
-	public void setComments(String comments) {
-		this.comments = comments;
+	public String getOrganizationName() {
+		return organizationName;
+	}
+
+	public String getContactName() {
+		return contactName;
+	}
+
+	public String getContactEmail() {
+		return contactEmail;
+	}
+
+	public String getContactPhone() {
+		return contactPhone;
 	}
 
 }
